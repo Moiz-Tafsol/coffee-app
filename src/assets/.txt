@@ -1,0 +1,48 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const cartSlice = createSlice({
+  name: "cart",
+  initialState: {
+    products: [],
+  },
+  reducers: {
+    add(state, action) {
+      let num = state.products.some((e) => e.id === action.payload.id);
+      if (num == false) {
+        state.products.push(action.payload);
+      } else {
+        let item = state.products.find((e) => e.id === action.payload.id);
+        let index = state.products.findIndex((e) => e.id === action.payload.id);
+        let final = { ...item, quantity: item.quantity + 1 };
+        let arr = [...state.products];
+        arr.splice(index, 1, final);
+        state.products = [...arr];
+      }
+    },
+
+    decrement(state, action) {
+      let item2 = state.products.find((e) => e.id === action.payload.id);
+      console.log(action.payload, "hellllllllll");
+      let index2 = state.products.findIndex((e) => e.id == action.payload.id);
+      if (item2?.quantity > 1) {
+        let final2 = { ...item2, quantity: item2.quantity - 1 };
+        let arr2 = [...state.products];
+        arr2.splice(index2, 1, final2);
+        state.products = [...arr2];
+      } else {
+        const rem = state.products.filter((e) => e?.id !== action.payload?.id);
+        console.log(rem);
+        state.products = rem;
+        console.log(item2?.quantity);
+      }
+    },
+
+    remove(state, action) {
+      const rem = state.products.filter((e) => e?.id !== action.payload);
+      state.products = rem;
+    },
+  },
+});
+
+export const { add, decrement, remove } = cartSlice.actions;
+export default cartSlice.reducer;

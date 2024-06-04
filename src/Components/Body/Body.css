@@ -1,0 +1,81 @@
+.baloo-2-Extra {
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#coff {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#coffeeSection {
+    margin-top: 110px;
+}
+
+#icontext {
+    margin: 4px;
+}
+
+#main {
+    font-size: 44px;
+    line-height: 130%;
+}
+
+#box {
+    background-color: rgb(55, 63, 71);
+    /* padding: 10px 18px 12px 15px; */
+    padding: 2px 9px 5px 9px;
+}
+
+#watch {
+    background-color: #eeb10a;
+    /* padding: 10px 18px 12px 15px; */
+    padding: 2px 8px 5px 8px;
+}
+
+#coffee {
+    background-color: #7556be;
+    /* padding: 10px 18px 12px 15px; */
+    padding: 2px 7px 5px 8px;
+}
+
+#shop {
+    background-color: #C47F17;
+    /* padding: 10px 18px 12px 15px; */
+    padding: 3px 9px 5px 8px;
+}
+
+#under {
+    font-size: 22px;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#iconrow {
+    margin-top: 50px;
+}
+
+#body {
+    margin-top: 100px;
+    position: relative;
+    isolation: isolate;
+    overflow: visible;
+}
+
+#body::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    z-index: -1;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.04) 0%,
+            rgba(0, 0, 0, 0.02) 25%,
+            rgba(0, 0, 0, 0.01) 75%,
+            rgba(0, 0, 0, 0) 100%);
+}

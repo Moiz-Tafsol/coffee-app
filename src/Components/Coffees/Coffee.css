@@ -1,0 +1,108 @@
+.coffeediv{
+    margin-top: 30px;
+    background-color: rgba(231, 229, 229, 0.562);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 5px;
+    width: min-content;
+    height: 100%;
+}
+
+#cartbutton{
+    background-color: #4B2995;
+    border-radius: 8px;
+    padding: 7px;
+    margin-bottom: 15px;
+    margin-right: 9px;
+    transition: all 0.5s ease;
+}
+
+#cartbutton:hover{
+    background-color: #804978;
+}
+
+/* #add{
+    background-color: rgba(27, 23, 23, 0.096);
+    font-size: 24px;
+    padding: 1px 5px 3px 5px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+#sub{
+    background-color: rgba(27, 23, 23, 0.096);
+    font-size: 24px;
+    padding: 1px 8px 3px 7px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+} */
+
+#buy{
+    background-color: rgba(104, 88, 88, 0.096);
+    border-radius: 12px;
+    /* padding: 1px 8px 3px 7px; */
+    margin-bottom: 15px;
+    margin-left: 5px;
+    
+}
+
+#sub{
+    border-style: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: blueviolet;
+    /* padding: 2px 10px 6px 10px; */
+    padding: 0px 4px 0px 6px;
+    margin: 0px;
+}
+
+#ab{
+    /* padding: 5px 10px 0px 10px; */
+    padding: 0px 4px 0px 7px;
+    font-size: 16px;
+    margin: 0px;
+}
+
+#add{
+    border-style: none;
+    color: blueviolet;
+    background-color: transparent;
+    padding: 0px 4px 4px 4px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+#val{
+    font-size: 20px;
+    padding-left: 8px;
+}
+
+#coffname{
+    font-size: 22px;
+}
+
+.baloo-2-Extra {
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.subs{
+    color: rgb(95, 95, 84);
+}
+
+.mar{
+    margin-left: 20px;
+}
+
+/* #coftext{
+    position: relative;
+    bottom: 40px;
+} */
+
+#img{
+    position: relative;
+    bottom: 30px;
+}

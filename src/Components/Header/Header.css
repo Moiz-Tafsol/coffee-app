@@ -1,0 +1,62 @@
+#toptext{
+    font-size: 15px;
+    color:rgb(122, 11, 226);
+    margin: 4px;
+}
+
+@media (max-width:768px)
+{
+    
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+span{
+    display: flex;
+    align-items: center;
+}
+
+#first{
+    background-color: #e8e1f2;
+}
+
+#second{
+    background-color:#f3eeb1;
+    position: relative;
+}
+
+#cart{
+    margin: 3px;
+}
+
+#cart.hascoffee::after{
+    display: block;
+}
+
+#cart::after {
+    content: attr(data-coffees); 
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #C47F17;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px; 
+    font-size: 12px; 
+    border: 2px solid #f3eeb1; 
+}
